@@ -1,0 +1,13 @@
+{
+    "keyboard_name": "dz60-ickule-v2",
+    "usb": {
+        "device_ver": "0x0002",
+        "device_version": "0.0.2"
+    },
+    "indicators": { "caps_lock": "E6" },
+    "rgblight": { "pin": "B2" },
+    "matrix_pins": {
+        "cols": ["F1", "D0", "D1", "D2", "D3", "D5", "D4", "D6", "D7", "B4", "F7", "C7", "C6", "B6", "B5"],
+        "rows": ["F0", "B3", "F6", "F4", "F5"]
+    }
+}
