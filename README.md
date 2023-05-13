@@ -44,7 +44,7 @@ qmk setup --home /path/to/qmk/home
 
 ## This repository
 
-This config is suitable for both V1 (DZ60 Rev 3.0) and V2 (DZ60 V2 Flex cut) board.
+This config is suitable for the V1 (DZ60 Rev 3.0) only.
 
 ### Cloning this repo
 
@@ -59,10 +59,8 @@ git clone https://github.com/ickule/dz60_ickule.git /path/to/qmk/home/keyboards/
 To set this keyboard and its keymap as default, use the following:
 
 ```sh
-qmk config compile.keyboard=dz60_ickule/v1
-or
-qmk config compile.keyboard=dz60_ickule/v2
-qmk config compile.keymap=via
+qmk config compile.keyboard=dz60_ickule
+qmk config compile.keymap=default
 ```
 
 To set the default number of threads to use for compiling, use the following:
@@ -83,7 +81,5 @@ qmk compile
 Alternatively, you can compile the keyboard and its keymap directly with the following:
 
 ```sh
-qmk compile -kb dz60_ickule/v1 -km via -j 16
-or
-qmk compile -kb dz60_ickule/v2 -km via -j 16
+qmk compile -kb dz60_ickule -km default -j 16
 ```

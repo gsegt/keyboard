@@ -1,4 +1,5 @@
 {
+    "keyboard_name": "dz60_ickule",
     "manufacturer": "DZTECH",
     "maintainer": "ickule",
     "url": "https://github.com/ickule/dz60_ickule",
@@ -7,43 +8,30 @@
     "debounce_type":  "sym_eager_pk",
     "debounce": 5,
     "usb": {
+        "device_ver": "0x0001",
+        "device_version": "0.0.1",
         "pid": "0x2260",
         "vid": "0x445A",
         "polling_interval": 1
     },
     "features": {
-        "audio": false,
-        "bootmagic": true,
-        "command": false,
-        "console": false,
-        "extrakey": true,
-        "mousekey": true,
-        "nkro": true,
-        "rgblight": true
+        "extrakey": true
     },
-    "indicators": { "on_state": 0 },
-    "rgblight": {
-        "animations": {
-            "alternating": true,
-            "breathing": true,
-            "christmas": true,
-            "knight": true,
-            "rainbow_mood": true,
-            "rainbow_swirl": true,
-            "rgb_test": true,
-            "snake": true,
-            "static_gradient": true,
-            "twinkle": true
-    },
-        "brightness_steps": 10,
-        "hue_steps": 10,
-        "led_count": 16,
-        "saturation_steps": 10
+    "indicators": {
+        "caps_lock": "B2",
+        "on_state": 0
     },
     "diode_direction": "COL2ROW",
-    "matrix": {"rows": 5, "cols": 15},
+    "matrix": {
+        "cols": 15,
+        "rows": 5
+    },
+    "matrix_pins": {
+        "cols": ["F0", "F1", "E6", "C7", "C6", "B7", "D4", "B1", "B0", "B5", "B4", "D7", "D6", "B3", "F4"],
+        "rows": ["D0", "D1", "D2", "D3", "D5"]
+    },
     "layouts": {
-        "LAYOUT": {
+        "LAYOUT_60_ansi_split_bs_rshift": {
             "layout": [
                 { "label": "k00", "matrix": [0, 0], "w": 1, "x": 0, "y": 0 },
                 { "label": "k01", "matrix": [0, 1], "w": 1, "x": 1, "y": 0 },
@@ -87,8 +75,7 @@
                 { "label": "k2b", "matrix": [2, 11], "w": 1, "x": 10.75, "y": 2 },
                 { "label": "k2c", "matrix": [2, 12], "w": 1, "x": 11.75, "y": 2 },
                 { "label": "k2d", "matrix": [2, 13], "w": 2.25, "x": 12.75, "y": 2 },
-                { "label": "k30", "matrix": [3, 0], "w": 1.25, "x": 0, "y": 3 },
-                { "label": "k31", "matrix": [3, 1], "w": 1, "x": 1.25, "y": 3 },
+                { "label": "k30", "matrix": [3, 0], "w": 2.25, "x": 0, "y": 3 },
                 { "label": "k32", "matrix": [3, 2], "w": 1, "x": 2.25, "y": 3 },
                 { "label": "k33", "matrix": [3, 3], "w": 1, "x": 3.25, "y": 3 },
                 { "label": "k34", "matrix": [3, 4], "w": 1, "x": 4.25, "y": 3 },
@@ -104,14 +91,11 @@
                 { "label": "k40", "matrix": [4, 0], "w": 1.25, "x": 0, "y": 4 },
                 { "label": "k41", "matrix": [4, 1], "w": 1.25, "x": 1.25, "y": 4 },
                 { "label": "k43", "matrix": [4, 3], "w": 1.25, "x": 2.5, "y": 4 },
-                { "label": "k44", "matrix": [4, 4], "w": 2.25, "x": 3.75, "y": 4 },
-                { "label": "k46", "matrix": [4, 6], "w": 1.25, "x": 6, "y": 4 },
-                { "label": "k48", "matrix": [4, 8], "w": 2.75, "x": 7.25, "y": 4 },
-                { "label": "k4a", "matrix": [4, 10], "w": 1, "x": 10, "y": 4 },
-                { "label": "k4b", "matrix": [4, 11], "w": 1, "x": 11, "y": 4 },
-                { "label": "k4c", "matrix": [4, 12], "w": 1, "x": 12, "y": 4 },
-                { "label": "k4d", "matrix": [4, 13], "w": 1, "x": 13, "y": 4 },
-                { "label": "k4e", "matrix": [4, 14], "w": 1, "x": 14, "y": 4 }
+                { "label": "k46", "matrix": [4, 6], "w": 6.25, "x": 3.75, "y": 4 },
+                { "label": "k4b", "matrix": [4, 10], "w": 1.25, "x": 10, "y": 4 },
+                { "label": "k4c", "matrix": [4, 11], "w": 1.25, "x": 11.25, "y": 4 },
+                { "label": "k4d", "matrix": [4, 13], "w": 1.25, "x": 12.5, "y": 4 },
+                { "label": "k4e", "matrix": [4, 14], "w": 1.25, "x": 13.75, "y": 4 }
             ]
         }
     }
