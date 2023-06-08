@@ -18,68 +18,78 @@ Make example for this keyboard (after setting up your build environment):
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
 
-## QMK setup
-
-First, we must setup setup qmk in a virtual environment.
-To install the necessary packages and python modules
-
-```sh
-sudo apt install -y git python3-venv
-python -m venv .venv
-source .venv/bin/activate (or .venv/bin/activate.fish)
-python -m pip install -U -r requirements.txt
-```
-
-Now, clone the qmk repository
-
-```sh
-git clone https://github.com/qmk/qmk_firmware.git /path/to/qmk/home
-```
-
-Finally, run the setup
-
-```sh
-qmk setup --home /path/to/qmk/home
-```
-
 ## This repository
 
 This config is suitable for the V1 (DZ60 Rev 3.0) only.
 
-### Cloning this repo
+## QMK setup
 
-This repository holds a fake new keyboard with only custom changes. It requires needs to be cloned in the "qmk_firmwares/keyboard" directory of QMK in order to be usable.
+First, clone the qmk repository:
 
-```sh
-git clone https://github.com/ickule/dz60_ickule.git /path/to/qmk/home/keyboards/
-```
+    ```sh
+    git clone https://github.com/qmk/qmk_firmware.git /path/to/qmk/home --recurse-submodules
+    ```
 
-### QMK configuration
+Go to the keyboard folder:
+
+    ```sh
+    cd /path/to/qmk/home/keyboards
+    ```
+
+Clone this repository. It holds a fake new keyboard with only custom changes. It requires needs to be cloned in the "qmk_firmwares/keyboard" directory of QMK in order to be usable.
+
+    ```sh
+    git clone https://github.com/ickule/dz60_ickule.git
+    ```
+
+Go to the keyboard folder:
+
+    ```sh
+    cd dz60_ickule
+    ```
+
+Now, we must setup setup qmk in a virtual environment.
+To install the necessary packages and python modules, run the following:
+
+    ```sh
+    sudo apt install -y git python-is-python3 python3-venv
+    python -m venv .venv
+    source .venv/bin/activate (or .venv/bin/activate.fish)
+    python -m pip install -U -r requirements.txt
+    ```
+
+Finally, run the setup and follow intructions:
+
+    ```sh
+    qmk setup --home /path/to/qmk/home
+    ```
+
+## QMK configuration
 
 To set this keyboard and its keymap as default, use the following:
 
-```sh
-qmk config compile.keyboard=dz60_ickule
-qmk config compile.keymap=default
-```
+    ```sh
+    qmk config compile.keyboard=dz60_ickule
+    qmk config compile.keymap=default
+    ```
 
 To set the default number of threads to use for compiling, use the following:
 Make sure you adapt the number to the number of threads of your computer.
 
-```sh
-qmk config compile.parallel=16
-```
+    ```sh
+    qmk config compile.parallel=16
+    ```
 
-### Compiling the keyboard
+## Compiling the keyboard
 
 To compile after the previous section setup, run the following:
 
-```sh
-qmk compile
-```
+    ```sh
+    qmk compile
+    ```
 
 Alternatively, you can compile the keyboard and its keymap directly with the following:
 
-```sh
-qmk compile -kb dz60_ickule -km default -j 16
-```
+    ```sh
+    qmk compile -kb dz60_ickule -km default -j 16
+    ```
