@@ -22,6 +22,10 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 This config is suitable for the V1 (DZ60 Rev 3.0) only.
 
+## Open in VSCode
+
+You can open this project in VSCode with the workspace file in the .vscode folder.
+
 ## QMK setup
 
 First, clone the qmk repository:
