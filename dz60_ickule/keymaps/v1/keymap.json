@@ -1,6 +1,6 @@
 {
-  "keyboard": "dz60",
-  "keymap": "default",
+  "keyboard": "dz60-v1",
+  "keymap": "v1",
   "layout": "LAYOUT_60_ansi_split_bs_rshift",
   "layers": [
     [

@@ -2,7 +2,7 @@
 
 ## This repository
 
-This config is suitable for the V1 (DZ60 Rev 3.0) only.
+This config is suitable for both the V1 (DZ60 Rev 3.0) and V2 (DZ60 V2 Flex-cut).
 
 ## Open in VSCode
 
@@ -13,7 +13,7 @@ You can open this project in VSCode with the workspace file in the .vscode folde
 Clone this repository. It holds a fake new keyboard with only custom changes. It requires needs to be cloned in the "qmk_firmwares/keyboard" directory of QMK in order to be usable.
 
     ```sh
-    git clone https://github.com/ickule/keyboard.git --recurse-submodules && cd keyboard
+    git clone https://github.com/ickule/keyboards.git --recurse-submodules && cd keyboard
     ```
 
 Now, we want to setup setup qmk in a virtual environment.
@@ -32,9 +32,9 @@ Finally, run the setup and follow intructions:
     qmk setup --home qmk_firmware
     ```
 
-## Compiling the keyboard
+## Compiling the keyboards
 
-To compile after the previous section setup, run the following:
+To compile both  versions, run the following:
 
     ```sh
     sh build-board.sh
