@@ -29,7 +29,7 @@ To install the necessary packages and python modules, run the following:
 Finally, run the setup and follow intructions:
 
     ```sh
-    qmk setup --home qmk_firmware
+    qmk setup --home .
     ```
 
 ## Compiling the keyboards
