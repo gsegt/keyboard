@@ -4,10 +4,6 @@
 
 This config is ONLY suitable for the V1 (DZ60 Rev 3.0) NOT the V2 (DZ60 V2 Flex-cut).
 
-## Open in VSCode
-
-You can open this project in VSCode with the workspace file in the .vscode folder.
-
 ## QMK setup
 
 Clone this repository. It holds a fake new keyboard with only custom changes. It requires needs to be cloned in the "qmk_firmwares/keyboard" directory of QMK in order to be usable.
