@@ -26,7 +26,7 @@ To install the necessary packages and python modules, run the following:
     python -m pip install -U -r requirements.txt
     ```
 
-Finally, run the setup and follow intructions:
+Finally, run the setup and follow instructions:
 
     ```sh
     qmk setup --home .
@@ -39,7 +39,7 @@ To compile, run the following:
     ```sh
     sh build-board.sh
     ```
-Your >hex file will be in the `builds` folder.
+Your hex file will be in the `builds` folder.
 
 ## Notes
 
