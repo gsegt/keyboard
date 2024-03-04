@@ -1,21 +1,28 @@
 #!/bin/sh
 
-# Update repos
+echo "##### Update qmk dependencies"
+cd qmk_firmware
 git pull --recurse-submodule
+cd ..
+echo ""
 
-# Moving necessary files for building
-rm -fr ./qmk_firmware/keyboards/dz60_ickule
-cp -r ./dz60_ickule ./qmk_firmware/keyboards/dz60_ickule
+echo "##### Moving necessary files for building"
+rm -vfr ./qmk_firmware/keyboards/dz60_ickule
+cp -vr ./dz60_ickule ./qmk_firmware/keyboards/dz60_ickule
+echo ""
 
-# Building both v1 and v2 board
-qmk compile -kb dz60_ickule -km v1 -j 16
+echo "##### Building board"
+qmk compile -c -kb dz60_ickule -km v1 -j 16
+echo ""
 
-# Removing the temporary keyboard
-rm -fr ./qmk_firmware/keyboards/dz60_ickule
+echo "##### Removing the temporary keyboard"
+rm -vfr ./qmk_firmware/keyboards/dz60_ickule
+echo ""
 
-# Moving the compile results to the build folder
-mkdir -p builds
-mv ./qmk_firmware/dz60_ickule_v1.hex ./builds/dz60_v1.hex
+echo "##### Moving the compile results to the build folder"
+mkdir -vp builds
+mv -v ./qmk_firmware/dz60_ickule_v1.hex ./builds/dz60_v1.hex
+echo ""
 
-# Cleaning qmk build files
+echo "##### Cleaning qmk build files"
 qmk clean
