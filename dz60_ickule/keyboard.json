@@ -1,7 +1,7 @@
 {
     "manufacturer": "DZTECH",
-    "maintainer": "ickule",
-    "url": "https://github.com/ickule/keyboard",
+    "maintainer": "gsegt",
+    "url": "https://github.com/gsegt/keyboard",
     "processor": "atmega32u4",
     "bootloader": "atmel-dfu",
     "debounce_type":  "sym_eager_pk",
