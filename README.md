@@ -28,14 +28,16 @@ Finally, run the setup and follow instructions:
     qmk setup --home .
     ```
 
-## Compiling the keyboards
+## Flashing the keyboards
 
-To compile, run the following:
+To flash, run the following:
 
     ```sh
-    sh build-board.sh
+    sh flash-board.sh
     ```
-Your hex file will be in the `builds` folder.
+
+> [!NOTE]
+> This task also builds the board. Your hex file will be in the `builds` folder.
 
 ## Notes
 
