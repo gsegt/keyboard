@@ -2,7 +2,7 @@
 
 echo "##### Update qmk dependencies"
 cd qmk_firmware
-git pull --recurse-submodule
+git pull --autostash --recurse-submodule
 cd ..
 echo ""
 
