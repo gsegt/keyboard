@@ -36,6 +36,8 @@ To flash, run the following:
     sh flash-board.sh
     ```
 
+If you are using VSCode, you can use the task feature with `Ctrl+Shift+B`.
+
 > [!NOTE]
 > This task also builds the board. Your hex file will be in the `builds` folder.
 
