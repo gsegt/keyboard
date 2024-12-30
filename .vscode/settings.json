@@ -31,6 +31,9 @@
     "[json]": {
         "editor.formatOnSave": false
     },
+    "[c]": {
+        "editor.formatOnSave": false
+    },
     "cSpell.words": [
         "atmega",
         "atmel",
