@@ -12,7 +12,7 @@ cp -vr ./dz60_ickule ./qmk_firmware/keyboards/dz60_ickule
 echo ""
 
 echo "##### Building board"
-qmk flash -c -kb dz60_ickule -km v1 -j 16
+qmk compile -c -kb dz60_ickule -km v1 -j 16
 echo ""
 
 echo "##### Removing the temporary keyboard"

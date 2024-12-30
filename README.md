@@ -25,15 +25,15 @@ Run the setup and follow instructions to clone and setup qmk firmware:
     qmk setup --home ./qmk_firmware
     ```
 
-## Flashing the keyboards
+## Compiling the firmware
 
-To flash, run the following:
+To compile, run the following:
 
     ```sh
-    sh flash-board.sh
+    sh compile-board.sh
     ```
 
 If you are using VSCode, you can use the task feature with `Ctrl+Shift+B`.
 
 > [!NOTE]
-> This task also builds the board. Your hex file will be in the `builds` folder.
+> Your hex file will be in the `builds` folder.
