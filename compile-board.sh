@@ -7,21 +7,22 @@ cd ..
 echo ""
 
 echo "##### Moving necessary files for building"
-rm -vfr ./qmk_firmware/keyboards/dz60_ickule
-cp -vr ./dz60_ickule ./qmk_firmware/keyboards/dz60_ickule
+mv -v ./qmk_firmware/keyboards/dz60 ./qmk_firmware/keyboards/dz60.bak
+cp -vr ./dz60 ./qmk_firmware/keyboards/dz60
 echo ""
 
 echo "##### Building board"
-qmk compile -c -kb dz60_ickule -km v1 -j 16
+qmk compile -c -kb dz60 -km gsegt -j 16
 echo ""
 
 echo "##### Removing the temporary keyboard"
-rm -vfr ./qmk_firmware/keyboards/dz60_ickule
+rm -vfr ./qmk_firmware/keyboards/dz60
+mv -v ./qmk_firmware/keyboards/dz60.bak ./qmk_firmware/keyboards/dz60
 echo ""
 
 echo "##### Moving the compile results to the build folder"
 mkdir -vp builds
-mv -v ./qmk_firmware/dz60_ickule_v1.hex ./builds/dz60_v1.hex
+mv -v ./qmk_firmware/dz60_gsegt.hex ./builds/dz60_gsegt.hex
 echo ""
 
 echo "##### Cleaning qmk build files"
