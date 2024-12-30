@@ -9,13 +9,7 @@ This config is **ONLY** suitable for the V1 (DZ60 Rev 3.0) **NOT** the V2 (DZ60 
 
 ## QMK setup
 
-Clone this repository. It holds a fake new keyboard with only custom changes. It requires needs to be cloned in the `qmk_firmwares/keyboard` directory of QMK in order to be usable.
-
-    ```sh
-    git clone https://github.com/ickule/keyboard.git --recurse-submodules && cd keyboard
-    ```
-
-Now, we want to setup setup qmk in a virtual environment.
+We want to setup setup qmk in a virtual environment.
 To install the necessary packages and python modules, run the following:
 
     ```sh
@@ -25,7 +19,7 @@ To install the necessary packages and python modules, run the following:
     python -m pip install -U -r requirements.txt
     ```
 
-Finally, run the setup and follow instructions:
+Run the setup and follow instructions to clone and setup qmk firmware:
 
     ```sh
     qmk setup --home ./qmk_firmware
