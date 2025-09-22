@@ -40,6 +40,7 @@
         "autostash",
         "BSLS",
         "BSPC",
+        "direnv",
         "DZTECH",
         "extrakey",
         "gsegt",
@@ -53,9 +54,11 @@
         "MNXT",
         "MPLY",
         "MPRV",
+        "nixpkgs",
         "PAUS",
         "PGDN",
         "PGUP",
+        "pkgs",
         "PSCR",
         "QUOT",
         "RALT",
@@ -65,9 +68,12 @@
         "rshift",
         "SCLN",
         "SCRL",
+        "setuptools",
         "SLSH",
+        "SOCD",
         "venv",
         "VOLD",
-        "VOLU"
+        "VOLU",
+        "WASD"
     ],
 }

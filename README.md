@@ -19,6 +19,9 @@ To install the necessary packages and python modules, run the following:
     python -m pip install -U -r requirements.txt
     ```
 
+> [!NOTE]
+> In a nix environment supporting nix direnv, the system should create a suitable shell with the necessary packages.
+
 Run the setup and follow instructions to clone and setup qmk firmware:
 
     ```sh
