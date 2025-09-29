@@ -4,13 +4,13 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Flash board",
+            "label": "Compile board",
             "type": "shell",
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "command": "./flash-board.sh",
+            "command": "sh compile-board.sh",
         }
     ]
 }
