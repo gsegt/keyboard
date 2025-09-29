@@ -34,6 +34,14 @@
     "[c]": {
         "editor.formatOnSave": false
     },
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "keyboard.json"
+            ],
+            "url": "./qmk_firmware/data/schemas/keyboard.jsonschema"
+        }
+    ],
     "cSpell.words": [
         "atmega",
         "atmel",
