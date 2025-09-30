@@ -4,14 +4,17 @@
     "url": "https://github.com/gsegt/keyboard",
     "processor": "atmega32u4",
     "bootloader": "atmel-dfu",
-    "debounce_type":  "sym_eager_pk",
-    "debounce": 5,
+    "build":{
+        "debounce_type":  "sym_eager_pk"
+    },
+    "debounce": 10,
     "usb": {
+        "device_version": "1.0.0",
         "pid": "0x2260",
-        "device_ver": "0x0001",
-        "device_version": "0.0.1",
-        "vid": "0x445A",
-        "polling_interval": 1
+        "vid": "0x445A"
+    },
+    "qmk":{
+        "keys_per_scan": 12
     },
     "features": {
         "extrakey": true
