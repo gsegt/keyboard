@@ -16,8 +16,15 @@
     "qmk":{
         "keys_per_scan": 12
     },
+    "host":{
+        "default": {
+            "nkro": true
+        }
+    },
     "features": {
-        "extrakey": true
+        "extrakey": true,
+        "nkro": true
+
     },
     "diode_direction": "COL2ROW",
     "matrix": {
