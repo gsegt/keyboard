@@ -3,7 +3,6 @@
         "davidanson.vscode-markdownlint",
         "jnoortheen.nix-ide",
         "ms-python.python",
-        "streetsidesoftware.code-spell-checker-british-english",
         "streetsidesoftware.code-spell-checker",
     ]
 }
